@@ -24,10 +24,9 @@ public class TestMain {
 
     @Test
     public void test(){
-        System.out.println("before");
-        User user = userService.queryByUsername("Robert_Wang");
-        System.out.println("Username :" + user.getAge());
-        System.out.println("end");
+        User user = userService.queryById(1);
+        System.out.println("username :" + user.getUsername());
+//       System.out.println(userService.queryByUsername("Robert_Wang").getUsername());
 
     }
 }
